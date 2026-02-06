@@ -21,3 +21,5 @@ Thumbs.db
 
 # PDFs
 *.pdf
+
+frontend/node_modules
