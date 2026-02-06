@@ -12,6 +12,11 @@ from backend.forecast_engine import forecast_cash_flow
 from backend.report_engine import generate_pdf
 
 app = FastAPI(title="Financial Health AI")
+from fastapi import APIRouter
+
+router = APIRouter()
+app.include_router(router)
+
 
 # ✅ CORS — allow ALL during hackathon
 app.add_middleware(
